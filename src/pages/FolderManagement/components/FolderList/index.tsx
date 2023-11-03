@@ -98,7 +98,7 @@ const FolderList: React.FC = () => {
   };
 
   const handleViewInfo = (e) => {
-    const el = e.target.closest('div.dropdown_list');
+    const el = e.domEvent.target.closest('div.dropdown_list');
     const className = el.getAttribute('class');
     const classes = className.split(' ').filter((item) => item.includes('folder_key_'));
     const folderId = parseInt(classes[0].split('_')[2]);
@@ -108,7 +108,7 @@ const FolderList: React.FC = () => {
   };
 
   const handleMoveFolder = (e) => {
-    const el = e.target.closest('div.dropdown_list');
+    const el = e.domEvent.target.closest('div.dropdown_list');
     const className = el.getAttribute('class');
     const classes = className.split(' ').filter((item) => item.includes('folder_key_'));
     const folderId = parseInt(classes[0].split('_')[2]);
@@ -120,7 +120,7 @@ const FolderList: React.FC = () => {
   };
 
   const handleDeleteFolder = (e) => {
-    const el = e.target.closest('div.dropdown_list');
+    const el = e.domEvent.target.closest('div.dropdown_list');
     const className = el.getAttribute('class');
     const classes = className.split(' ').filter((item) => item.includes('folder_key_'));
     const folderId = parseInt(classes[0].split('_')[2]);
@@ -156,7 +156,8 @@ const FolderList: React.FC = () => {
   const items: MenuProps['items'] = [
     {
       key: '1',
-      label: <span onClick={handleViewInfo}>View Info</span>,
+      label: <span style={{ height: '100%' }}>View Info</span>,
+      onClick: handleViewInfo
     },
     // isAbleToPrint && {
     //   key: '2',
@@ -164,11 +165,13 @@ const FolderList: React.FC = () => {
     // },
     isAbleToMove && {
       key: '3',
-      label: <span onClick={handleMoveFolder}>Move Folder To</span>,
+      label: <span>Move Folder To</span>,
+      onClick: handleMoveFolder
     },
     isAbleToDelete && {
       key: '4',
-      label: <span onClick={handleDeleteFolder}>Delete Folder</span>,
+      label: <span>Delete Folder</span>,
+      onClick: handleDeleteFolder
     },
     {
       key: '5',
@@ -176,11 +179,13 @@ const FolderList: React.FC = () => {
       children: [
         {
           key: '5-1',
-          label: <span onClick={handleExportZipFie}>Compress and Export as ZIP File</span>,
+          label: <span>Compress and Export as ZIP File</span>,
+          onClick: handleExportZipFie
         },
         {
           key: '5-2',
-          label: <span onClick={handleExportPdfFie}>Compress and Export as single PDF</span>,
+          label: <span>Compress and Export as single PDF</span>,
+          onClick: handleExportPdfFie
         },
       ],
     },

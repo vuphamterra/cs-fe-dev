@@ -138,17 +138,17 @@ const ModalExportFilePdf = (props: ExModalProps) => {
           <Radio.Group className={styles.group_radio} onChange={onChangeCheckBox} value={checkedVal}>
             <Row style={{ padding: 10 }}>
               <Col span={8}>
-                <Radio value={1}>All Files</Radio>
+                <Radio value={1}>All Pages</Radio>
               </Col>
             </Row>
             <Row style={{ padding: 10 }}>
               <Col span={16}>
-                <Radio value={2}>Current File</Radio>
+                <Radio value={2}>Current Page</Radio>
               </Col>
             </Row>
             <Row style={{ padding: '5px 10px', alignItems: 'center' }}>
-              <Col span={8}>
-                <Radio value={3}>Select File</Radio>
+              <Col span={9}>
+                <Radio value={3}>Select Page</Radio>
               </Col>
               <Col span={13}>
                 <Tooltip title="Using comma to distinguish the file">
@@ -162,11 +162,11 @@ const ModalExportFilePdf = (props: ExModalProps) => {
               </Col>
             </Row>
             <Row style={{ padding: '5px 10px', alignItems: 'center' }}>
-              <Col span={8}>
-                <Radio value={4}>Select File range</Radio>
+              <Col span={9}>
+                <Radio value={4}>Select Page range</Radio>
               </Col>
               <Col span={2}>
-                <p>From</p>
+                <label>From</label>
               </Col>
               <Col span={4}>
                 <Input
@@ -178,7 +178,7 @@ const ModalExportFilePdf = (props: ExModalProps) => {
               <Col span={2}>
               </Col>
               <Col span={1}>
-                <p>To</p>
+                <label>To</label>
               </Col>
               <Col span={4}>
                 <Input
@@ -206,7 +206,7 @@ const ModalExportFilePdf = (props: ExModalProps) => {
                 ]}
               />
             </Col>
-            <Col span={12} onChange={onIncludeChange} style={{ paddingLeft: 10 }}>
+            <Col span={12} onChange={onIncludeChange} style={{ paddingLeft: 26 }}>
               <Checkbox >Include Annotations</Checkbox>
             </Col>
           </Row>
