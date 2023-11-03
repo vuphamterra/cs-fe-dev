@@ -1,0 +1,40 @@
+.search_title {
+  margin-bottom: 24px;
+}
+
+.search_select {
+  width: 100%;
+  padding-right: 8px;
+
+  span[class="ant-select-arrow"] {
+    margin-right: 5px;
+  }
+}
+
+.index_search_col {
+  margin: 0;
+  display: flex;
+  > div:first-of-type {
+    flex: 1;
+  }
+}
+
+.index_field_actions {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 12px;
+
+  > span {
+    cursor: pointer;
+    border: 1px solid var(--cs-primary-color);
+    border-radius: 50%;
+    color: var(--cs-primary-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+  }
+}

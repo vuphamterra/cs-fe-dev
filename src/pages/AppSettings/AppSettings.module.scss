@@ -1,0 +1,70 @@
+.section {
+  padding: 16px;
+
+  .container {
+    display: flex;
+
+    >div {
+      height: calc(100vh - 32px);
+    }
+
+    .left_side {
+      flex: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(193.96deg, #3a52c5 32.98%, rgba(30, 158, 231, 0.8) 162.56%);
+      // background: url(../../assets/images/loginimg.png) no-repeat center/cover;
+      border-radius: 12px;
+
+      >p {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+      }
+
+      >p:first-of-type {
+        margin-top: 74px;
+      }
+
+      >p:last-of-type {
+        font-weight: 700;
+        margin-bottom: 58px;
+      }
+
+      img {
+        width: 533px;
+      }
+    }
+
+    .right_side {
+      flex: 55%;
+      padding: 80px 136px 80px 72px;
+
+      >div:first-of-type {
+        margin-bottom: 20px;
+
+        button.back_btn {
+          border: none;
+          box-shadow: none;
+          color: var(--cs-primary-color);
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          padding: 0;
+
+          svg {
+            vertical-align: -3px;
+            width: 18px;
+          }
+        }
+
+        button.back_btn.disabled {
+          color: #d9d9d9;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}

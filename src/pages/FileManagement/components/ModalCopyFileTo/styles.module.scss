@@ -1,0 +1,28 @@
+.copy_file_modal {
+
+  .modal_actions {
+    button {
+      width: 120px !important;
+      height: 40px;
+      border-radius: 38px;
+      font-weight: 600;
+      font-size: 16px;
+      border: none;
+    }
+
+    .cancel_btn {
+      color: var(--cs-primary-color);
+      background-color: unset;
+    }
+
+    .move_btn {
+      margin-right: 8px;
+      background-color: var(--cs-primary-color);
+      color: #ffffff;
+
+      &:hover {
+        color: #ffffff !important;
+      }
+    }
+  }
+}

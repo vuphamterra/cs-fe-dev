@@ -1,0 +1,103 @@
+.ModalRuntimeError {
+  .title {
+    display: flex;
+    align-items: center;
+    p {
+      color: #384250;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: var(--cs-primary-bg-color);
+      margin-right: 8px;
+      svg {
+        fill: var(--cs-primary-color);
+        height: 22px;
+        width: 22px;
+        margin-bottom: 3px;
+        margin-left: 2px;
+      }
+    }
+  }
+  .runtime {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    .runTimeItem {
+      cursor: pointer;
+      h4 {
+        color: var(--cs-primary-color);
+        font-size: 18px;
+        text-decoration: underline;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+
+      small {
+        font-size: 20px;
+        margin-left: 4px;
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+      .downloading {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: inline-block;
+        > span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          width: 17px;
+          height: 17px;
+          border-radius: 50%;
+          background-color: #fff;
+          z-index: 1;
+          svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 11.5px;
+            height: 11.5px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+  :global {
+    .ant-modal-content {
+      padding: 0;
+      .ant-modal-header {
+        padding: 20px;
+        .ant-modal-title {
+          font-weight: 700;
+          font-size: 20px;
+          color: #384250;
+        }
+      }
+      .ant-modal-body {
+        text-align: center;
+        p {
+          color: #6c737f;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.table_container {
+  max-height: 287px !important;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  table {
+    thead {
+      display: none;
+    }
+    tbody {
+      max-height: 287px;
+      overflow-y: scroll;
+      tr:first-of-type {
+        td:first-of-type {
+          border-top-left-radius: 8px;
+        }
+        td:last-of-type {
+          border-top-right-radius: 8px;
+        }
+      }
+      tr:last-of-type {
+        td {
+          border-bottom: none;
+        }
+        td:first-of-type {
+          border-bottom-left-radius: 8px;
+        }
+        td:last-of-type {
+          border-bottom-right-radius: 8px;
+        }
+      }
+    }
+  }
+}
+
+.delete_option_btn {
+  width: 20px;
+  height: 20px;
+  .delete_option_icon {
+    color: #9da4ae;
+    cursor: pointer;
+    &:hover {
+      color: #ff3b30;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.AnnotationBar {
+  padding: 16px;
+  .annotationControl {
+    padding: 0 12px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto 1fr;
+    align-items: center;
+    .item {
+      margin-left: 10px;
+
+      .outlineButton {
+        min-width: 100px;
+        height: 35px;
+        background: transparent;
+        border-radius: 25px;
+        color: var(--cs-primary-color);
+        border: 1px solid var(--cs-primary-color);
+        font-size: 16px;
+        margin-right: 10px;
+      }
+      .fillButton {
+        min-width: 100px;
+        height: 35px;
+        background: var(--cs-primary-color);
+        border-radius: 25px;
+        color: #fff;
+        font-size: 16px;
+      }
+      &.styleControl {
+        display: flex;
+        align-items: center;
+        .shape {
+          cursor: pointer;
+          img {
+            width: 32px;
+            height: 32px;
+          }
+        }
+        .styleText {
+          margin-right: 10px;
+          width: 30px;
+          height: 30px;
+
+          > span {
+            cursor: pointer;
+          }
+          :global {
+            .style-text {
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 5px;
+              &.active {
+                background-color: var(--cs-primary-color);
+                svg {
+                  path {
+                    fill: #fff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.buttonControl {
+        display: flex;
+        justify-content: flex-end;
+      }
+      :global {
+        .ant-select {
+          margin-left: 12px;
+        }
+        .color-palete {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          &.color-1 {
+            background-color: rgb(255, 121, 121);
+          }
+          &.color-2 {
+            background-color: rgb(0, 0, 255);
+          }
+          &.color-3 {
+            background-color: rgb(128, 128, 128);
+          }
+        }
+      }
+      p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        color: #384250;
+        margin-bottom: 0;
+        margin-right: 44px;
+      }
+
+      .selectedItem {
+        display: flex;
+        align-items: center;
+        gap: 3px !important;
+        cursor: pointer;
+        margin-left: 16px;
+        svg {
+          width: 12px;
+          height: 12px;
+          margin-bottom: 8px;
+          path {
+            fill: #9da4ae;
+          }
+        }
+      }
+    }
+  }
+}

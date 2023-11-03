@@ -1,0 +1,19 @@
+.Uploader {
+  .uploadIcon {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 auto 16px auto;
+  }
+  .text {
+    color: #6c737f;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .description {
+    // color: #6c737f;
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,113 @@
+.container {
+  height: 100%;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .btn_collapse {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    button {
+      border: none;
+      svg {
+        vertical-align: unset;
+      }
+    }
+  }
+  .wrap_select_drawer {
+    width: 100%;
+    margin-top: 30px;
+    height: 56px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f8fa;
+
+    .select_drawer {
+      width: 90%;
+      border: unset;
+      background-color: #f7f8fa;
+    }
+  }
+  .imgActive {
+    filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(318deg) brightness(150%) contrast(100%);
+  }
+
+  .list_nav_side {
+    width: 100%;
+    .list_item {
+      width: 100%;
+      display: flex;
+    }
+  }
+}
+
+.side_bar_collapse {
+  position: relative;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #384250;
+  .collapse_drawer {
+    border-radius: unset;
+    border-right: unset;
+    height: 100%;
+    .collapse_panel {
+      height: 100%;
+      border-radius: 0;
+      div[class='ant-collapse-header'] {
+        border-radius: 0;
+        background: var(--cs-primary-color);
+      }
+      span[class='ant-collapse-header-text'] {
+        color: #ffffff;
+      }
+      div[class='ant-collapse-expand-icon'] {
+        span {
+          color: #ffffff;
+        }
+      }
+      div[class='ant-collapse-content ant-collapse-content-active'],
+      div[class='ant-collapse-content ant-collapse-content-inactive ant-collapse-content-hidden'] {
+        border-radius: 0 !important;
+      }
+      div[class='ant-collapse-content-box'] {
+        max-height: 235px;
+      }
+      .list_drawer {
+        width: 100%;
+        .list_drawer_item {
+          padding-left: 35px !important;
+          width: 100%;
+          padding-inline: 20px;
+          display: flex;
+          justify-content: space-between;
+          cursor: pointer;
+          &:hover {
+            background-color: #f8f9fa;
+          }
+          svg {
+            color: green;
+          }
+        }
+      }
+    }
+  }
+
+  .spinner_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #ffffff, $alpha: 0.5);
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

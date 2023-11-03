@@ -1,0 +1,161 @@
+.form {
+  position: relative;
+  margin-top: 24px;
+  .head_row {
+    background: var(--cs-fill-color);
+    font-size: 16px;
+    color: #384250;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 24px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    > div {
+      padding: 8px;
+      text-align: center;
+    }
+  }
+
+  div[class="ant-col ant-form-item-control css-dev-only-do-not-override-htwhyh"] {
+    flex: 2;
+  }
+
+  div[class="ant-col ant-form-item-label css-dev-only-do-not-override-htwhyh"] {
+    flex: 1;
+    text-align: left;
+
+    > label {
+      &::before {
+        display: none !important;
+      }
+    }
+  }
+
+  div[class="ant-form-item-control-input-content"] {
+    > div {
+      width: 100%;
+    }
+  }
+
+  .spinner_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background: rgba($color: #ffffff, $alpha: 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal_description {
+    > label {
+      color: #384250;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    > input {
+      height: 40px;
+      border-radius: 8px;
+      padding: 8px;
+      border: none;
+      font-weight: 500;
+    }
+  }
+
+  .upload_folders_area {
+    > div:first-of-type {
+      margin-top: 10px;
+    }
+
+    div[class="ant-upload-list-item ant-upload-list-item-undefined"] {
+      width: 99%;
+    }
+
+    .upload_area_content {
+      display: flex;
+      align-items: center;
+      .upload_icon {
+        width: 32px;
+        height: 32px;
+        background: var(--cs-primary-bg-color);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          color: var(--cs-primary-color);
+        }
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 0;
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .upload_area_text {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .import_file_content {
+    margin-top: 10px;
+  }
+
+  .download_csv {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    a {
+      text-decoration: none;
+      &:hover {
+        color: rgb(13,110,253);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  div[class="ant-upload-list ant-upload-list-picture"] {
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  div[class="ant-upload-list ant-upload-list-picture"]::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  div[class="ant-upload-list ant-upload-list-picture"]::-webkit-scrollbar-thumb {
+    background: #c9c9c9;
+    border-radius: 8px;
+  }
+
+  div[class="ant-upload-list-item-thumbnail ant-upload-list-item-file"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .scan_files_btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .hide_upload_input {
+    div[class="ant-upload ant-upload-select"] {
+      display: none;
+    }
+  }
+
+  .file_notification {
+    p {
+      font-weight: 400;
+      color: red;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+}

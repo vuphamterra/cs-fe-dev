@@ -1,0 +1,52 @@
+.modal_text {
+  color: #6c737f;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 1rem;
+
+  span {
+    font-weight: 600;
+  }
+}
+
+.modal_footer {
+  button {
+    font-size: 16px;
+    height: 40px;
+    padding: 8px 24px;
+    font-weight: 600;
+    border-radius: 38px;
+    border: none;
+  }
+  .cancel_btn {
+    color: #384250;
+
+    &:hover {
+      color: #384250;
+    }
+  }
+
+  .remove_btn {
+    background: #ff3b30;
+    color: #ffffff;
+    
+    &:hover {
+      color: #ffffff !important;
+    }
+  }
+}
+
+.loading_spinner {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  border-radius: 8px;
+}

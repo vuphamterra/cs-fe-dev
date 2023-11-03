@@ -1,0 +1,11 @@
+.container {
+  color: #6c737f;
+  margin-bottom: 5px;
+  > div {
+    text-align: center;
+  }
+  .Doc {
+    width: 300px;
+    height: 300px;
+  }
+}

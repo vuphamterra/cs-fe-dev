@@ -1,0 +1,14 @@
+{
+  "en_us": "English (US)",
+  "vn": "Vietnamese",
+
+  "username": "Username",
+  "password": "Password",
+  "login_in": "Log in",
+  "forgot_pw": "Forgot password?",
+  "enter_email": "Enter Email",
+  "enter_username": "Enter Username",
+  "enter_password": "Enter Password",
+  "request_reset_pw": "Request reset password",
+  "cancel": "Cancel"
+}

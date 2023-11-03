@@ -1,0 +1,121 @@
+*p {
+  margin: 0;
+}
+
+.main_panel {
+  margin: 16px;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+
+  .row_layout {
+    width: 100%;
+    height: 64px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    padding-inline: 4px;
+  }
+
+  .title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #384250;
+    width: 220px;
+  }
+
+  p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #384250;
+  }
+
+  .common_header {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 14px;
+      height: 14px;
+      margin-right: 8px;
+    }
+    p {
+      margin: 0;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: #384250;
+    }
+  }
+
+  // Search
+  .search_collapse {
+    background-color: var(--cs-fill-color);
+    margin-bottom: 24px;
+
+    .max_num_folder {
+      width: 200px;
+      height: 40px;
+    }
+
+    div[class='ant-collapse-content-box'] {
+      padding: 0;
+    }
+  }
+
+  // View
+  .view_collapse {
+    background-color: var(--cs-fill-color);
+    margin-bottom: 24px;
+
+    .view_select {
+      width: 200px;
+    }
+
+    div[class='ant-collapse-content-box'] {
+      padding: 0;
+    }
+  }
+
+  // Print
+  .print_collapse {
+    background-color: var(--cs-fill-color);
+    margin-bottom: 24px;
+
+    .view_select {
+      width: 200px;
+    }
+
+    div[class='ant-collapse-content-box'] {
+      padding: 0;
+    }
+  }
+
+  // Document
+  .document_collapse {
+    background-color: var(--cs-fill-color);
+    margin-bottom: 24px;
+
+    .generate_title {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: #384250;
+      width: 220px;
+      margin-left: 12px;
+    }
+
+    div[class='ant-collapse-content-box'] {
+      padding: 0;
+    }
+  }
+}

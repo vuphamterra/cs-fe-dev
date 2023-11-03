@@ -1,0 +1,220 @@
+.bulk_import_modal {
+  .modal_title {
+    display: flex;
+    align-items: center;
+    svg {
+      background-color: var(--cs-primary-bg-color);
+      color: var(--cs-primary-color);
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    p {
+      margin: 0;
+      font-weight: 700;
+      font-size: 20px;
+      color: #384250;
+    }
+  }
+  .modal_body {
+    padding: 8px;
+    margin: 0;
+    font-size: 16px;
+    color: #6c737f;
+    height: 500px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 6px;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #c9c9c9;
+      border-radius: 8px;
+    }
+
+    .step_body {
+      margin-top: 8px;
+      .create_folder {
+        .table_head {
+          background: var(--cs-fill-color);
+          font-size: 16px;
+          color: #384250;
+          font-weight: 500;
+          border-radius: 8px 8px 0px 0px;
+          > div {
+            padding: 8px;
+            text-align: center;
+          }
+        }
+        .form_contain {
+          max-height: 320px;
+          overflow-x: hidden;
+          overflow-y: scroll;
+          padding-top: 6px;
+
+          &::-webkit-scrollbar {
+            width: 4px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: #c9c9c9;
+            border-radius: 8px;
+          }
+          .table_row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .col_item {
+              width: 100%;
+              padding-inline: 4px;
+              p {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                color: #384250;
+                text-align: center;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .upload_files {
+        .file_notification {
+          p {
+            font-weight: 400;
+            color: red;
+            font-size: 14px;
+            margin: 0;
+          }
+        }
+        .upload_tab {
+          display: flex;
+          align-items: center;
+          height: 40px;
+          margin-top: 8px;
+          svg {
+            background-color: var(--cs-primary-bg-color);
+            color: var(--cs-primary-color);
+            border-radius: 50%;
+            margin-right: 8px;
+          }
+          p {
+            margin: 0;
+            margin-left: 8px;
+            font-size: 14px;
+          }
+        }
+        div[class='ant-upload-list ant-upload-list-picture'] {
+          max-height: 320px;
+          overflow-x: hidden;
+          overflow-y: scroll;
+          padding: 6px;
+
+          &::-webkit-scrollbar {
+            width: 4px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: #c9c9c9;
+            border-radius: 8px;
+          }
+        }
+        div[class='ant-upload-list-item ant-upload-list-item-undefined'] {
+          height: 44px;
+          a {
+            width: 32px;
+            height: 32px;
+          }
+          span[class='anticon anticon-file'] {
+            width: 24px;
+            height: 24px;
+            vertical-align: super;
+          }
+        }
+        div[class='ant-upload-list-item-thumbnail ant-upload-list-item-file'] {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .btn_cancel {
+    width: 120px;
+    height: 40px;
+    border-radius: 38px;
+    border: unset;
+    font-weight: 600;
+    font-size: 16px;
+    &:hover {
+      background-color: #e9ecef;
+      color: #000000;
+    }
+  }
+  .btn_submit {
+    min-width: 120px;
+    height: 40px;
+    border: unset;
+    background-color: var(--cs-primary-color);
+    color: #ffffff;
+    border-radius: 38px;
+    font-weight: 600;
+    font-size: 16px;
+    &:hover {
+      color: #ffffff !important;
+    }
+  }
+}
+
+.modal_confirm {
+  .modal_title {
+    display: flex;
+    align-items: center;
+    svg {
+      background-color: var(--cs-primary-bg-color);
+      color: var(--cs-primary-color);
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    p {
+      margin: 0;
+      font-weight: 700;
+      font-size: 20px;
+      color: #384250;
+    }
+  }
+  p {
+    margin-top: 16px;
+    font-weight: 400;
+  }
+  .btn_stay {
+    min-width: 100px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cs-primary-color);
+    border-radius: 38px;
+  }
+
+  .btn_leave {
+    min-width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: var(--cs-primary-color);
+    border-radius: 38px;
+    &:hover {
+      background-color: var(--cs-primary-color);
+      color: #ffffff;
+    }
+  }
+}

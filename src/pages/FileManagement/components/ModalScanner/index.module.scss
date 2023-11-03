@@ -1,0 +1,118 @@
+.ModalScanner {
+  .headerModal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    &.right {
+      justify-content: flex-end;
+    }
+    .back {
+      border: 1px solid #9f7ff9;
+      border-radius: 30px;
+    }
+  }
+  :global {
+    #thumbList {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .divThumb {
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto auto 1fr;
+        background-color: #9f7ff9;
+        padding: 10px 20px;
+        border-radius: 30px;
+        margin-bottom: 8px;
+        width: 50%;
+        cursor: pointer;
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+        .close {
+          text-align: right;
+          cursor: pointer;
+          svg {
+            width: 16px;
+            height: 16px;
+          }
+        }
+        span {
+          margin: 0 5px 0 8px;
+          color: #fff;
+        }
+      }
+    }
+
+    .ant-steps-item {
+      .ant-steps-item-icon {
+        background-color: var(--cs-primary-color) !important;
+        border-color: var(--cs-primary-color) !important;
+
+        span {
+          color: #fff !important;
+        }
+      }
+      &.ant-steps-item-finish {
+        .ant-steps-item-icon {
+          background-color: #e6f4ff !important;
+          border-color: #e6f4ff !important;
+          svg {
+            fill: #1677ff;
+          }
+        }
+      }
+      &.ant-steps-item-wait {
+        .ant-steps-item-icon {
+          background-color: rgba(0, 0, 0, 0.06) !important;
+          border-color: rgba(0, 0, 0, 0.06) !important;
+        }
+      }
+    }
+  }
+  .stepLast {
+    :global {
+      .loading {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+      }
+      .CustomButton {
+        margin: 0 auto !important;
+      }
+    }
+    .anotherButton {
+      padding: 3px 24px;
+      display: flex;
+      align-items: center;
+      background-color: rgb(75, 0, 252);
+      border-radius: 30px;
+      width: fit-content;
+      color: #fff;
+      margin: 0 auto;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+  .FormScanner {
+    .content {
+      margin-top: 30px;
+      .blockControl {
+        :global {
+          .ant-form-item-row {
+            display: block;
+          }
+        }
+        .optionScanner {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

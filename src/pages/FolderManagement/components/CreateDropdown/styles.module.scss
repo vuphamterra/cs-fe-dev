@@ -1,0 +1,19 @@
+.dropdown_create {
+  width: 220px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cs-primary-color);
+  border-radius: 38px;
+  cursor: pointer;
+  p {
+    color: #f7f8fa !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+  }
+  svg {
+    margin-left: 8px;
+    color: #f7f8fa;
+  }
+}

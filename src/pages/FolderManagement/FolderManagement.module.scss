@@ -1,0 +1,19 @@
+.folder_sec {
+  display: grid;
+  overflow: hidden;
+  height: 100%;
+
+  .view_container {
+    margin: 12px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .list_container {
+    flex: 1;
+    padding: 0px 16px 16px 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    height: 100%;
+  }
+}

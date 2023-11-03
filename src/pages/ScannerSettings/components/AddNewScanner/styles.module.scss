@@ -1,0 +1,81 @@
+.modal_add_scanner {
+  .modal_header {
+    font-family: 'Inter';
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    img {
+      width: 48px;
+      height: 48px;
+      margin-right: 12px;
+    }
+    p {
+      margin: 0;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 20px;
+      color: #384250;
+    }
+    .sub_title {
+      font-weight: 400;
+      font-size: 14px;
+      color: #6c737f;
+    }
+  }
+  .search_scanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 112px;
+      height: 112px;
+    }
+    p {
+      margin: 0;
+      font-weight: 600;
+      font-size: 20px;
+      color: #384250;
+    }
+  }
+  .select_scanner {
+    .scanner_result {
+      display: flex;
+      align-items: center;
+      margin: 16px 0px;
+      height: 68px;
+      border: 1px solid #d2d6db;
+      padding: 12px;
+      border-radius: 8px;
+      img {
+        width: 44px;
+        height: 44px;
+      }
+      p {
+        margin: 0;
+        margin-left: 12px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #384250;
+      }
+    }
+  }
+  .modal_actions {
+    button {
+      width: 120px;
+      height: 40px;
+      border-radius: 38px;
+      font-weight: 600;
+      font-size: 16px;
+      border: none;
+    }
+    .cancel_btn {
+      color: var(--cs-primary-color);
+    }
+    .export_btn {
+      background-color: var(--cs-primary-color);
+      color: #ffffff;
+    }
+  }
+}

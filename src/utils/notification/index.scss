@@ -1,0 +1,28 @@
+.success {
+  border: 1px solid #3ac569;
+  background: #f5fff6;
+}
+
+.error {
+  border: 1px solid #ff3b30;
+  background: #fff5f5;
+}
+
+.warning {
+  border: 1px solid #ff951a;
+  background: #fffbf5;
+}
+
+.titleNofi {
+  font-weight: 600;
+  font-size: 16px;
+  color: #384250;
+  margin-bottom: 0;
+}
+
+.descriptionNofi {
+  color: #6c737f;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}

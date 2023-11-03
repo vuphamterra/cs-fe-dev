@@ -1,0 +1,15 @@
+.CustomButton {
+  padding: 3px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.disabled {
+  color: #fff !important;
+  background-color: #d2d6db !important;
+  cursor: none !important;
+}

@@ -1,0 +1,27 @@
+.container {
+  margin-top: 24px;
+  table {
+    colgroup {
+      display: none;
+    }
+    th, td {
+      border-inline-end: none !important;
+    }
+
+    .rowInvalid {
+      background-color: #fff2f0;
+
+      td[class="ant-table-cell ant-table-cell-row-hover"] {
+        background-color: #f8dcd8 !important;
+      }
+    }
+  }
+
+  .record_count {
+    color: #6c737f;
+    text-align: right;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+}

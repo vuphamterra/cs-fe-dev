@@ -1,0 +1,145 @@
+.file_review_sec {
+  background: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  border-radius: unset;
+  height: 100%;
+
+  > div:first-of-type {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div[class='ant-spin-container'] {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .file_content {
+    position: relative;
+    height: 100%;
+    padding-block: 8px;
+    width: 100%;
+    overflow: hidden;
+
+    .view_file_box {
+      width: 100%;
+      height: calc(100% - 56px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #c9c9c9;
+      }
+
+      .view_pdf {
+        width: 100%;
+        height: 100%;
+        padding: 8px;
+        .innerContent {
+          position: relative;
+          width: fit-content;
+          margin: 0 auto;
+          overflow: hidden;
+        }
+        :global {
+          .textLayer {
+            margin: auto;
+            width: var(--width-var-pdf);
+          }
+        }
+        .document {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+        .page {
+          canvas {
+            margin: auto;
+            height: 100%;
+            margin-bottom: 12px;
+          }
+        }
+      }
+
+      .view_img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        img {
+          width: 50%;
+          height: 100%;
+          object-fit: scale-down;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .toolbar {
+    position: fixed;
+    bottom: -12px;
+    display: flex;
+    background: #1f2a37;
+    padding: 12px 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    .block {
+      padding: 0 34px;
+      gap: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-right: 1px #d2d6db solid;
+      .input {
+        padding: 8px 12px;
+        background: #fff;
+        color: black;
+        border-radius: 8px;
+      }
+      img {
+        padding: 0;
+        cursor: pointer;
+      }
+      .page {
+        color: #fff;
+      }
+      &:last-child {
+        border: none;
+      }
+    }
+
+    &:hover {
+      background-color: #22282f;
+    }
+  }
+
+  .notAllow {
+    cursor: not-allowed !important;
+  }
+}
+
+.react-pdf__message {
+  display: none;
+}

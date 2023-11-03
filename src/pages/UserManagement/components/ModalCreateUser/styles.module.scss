@@ -1,0 +1,58 @@
+.modal_create_user {
+  overflow: hidden;
+  .modal_header {
+    font-family: 'Inter';
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    .icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--cs-primary-bg-color);
+      border-radius: 50%;
+      margin-right: 12px;
+      span {
+        svg {
+          color: var(--cs-primary-color);
+        }
+      }
+    }
+    p {
+      margin: 0;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 20px;
+      color: #384250;
+    }
+  }
+
+  .modal_body {
+    // CSS
+    width: 100%;
+  }
+
+  .modal_actions {
+    button {
+      width: 120px;
+      height: 40px;
+      border-radius: 38px;
+      font-weight: 600;
+      font-size: 16px;
+      border: none;
+    }
+    .cancel_btn {
+      color: var(--cs-primary-color);
+    }
+    .export_btn {
+      background-color: var(--cs-primary-color);
+      color: #ffffff;
+      &:hover {
+        color: #ffffff !important;
+      }
+    }
+  }
+}

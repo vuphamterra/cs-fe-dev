@@ -1,0 +1,50 @@
+.folder_delete_modal {
+  .modal_title {
+    display: flex;
+    align-items: center;
+    img {
+      width: 48px;
+      height: 48px;
+      margin-right: 8px;
+    }
+    p {
+      margin: 0;
+      font-weight: 700;
+      font-size: 20px;
+      color: #384250;
+    }
+  }
+  .modal_body {
+    padding: 12px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6c737f;
+  }
+
+  .btn_cancel {
+    width: 120px;
+    height: 40px;
+    border-radius: 38px;
+    border: unset;
+    font-weight: 600;
+    font-size: 16px;
+    &:hover {
+      background-color: #e9ecef;
+      color: #000000;
+    }
+  }
+  .btn_delete {
+    width: 120px;
+    height: 40px;
+    border: unset;
+    background-color: #ff3b30;
+    color: #ffffff;
+    border-radius: 38px;
+    font-weight: 600;
+    font-size: 16px;
+    &:hover {
+      color: #ffffff !important;
+    }
+  }
+}

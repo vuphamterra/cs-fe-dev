@@ -1,0 +1,31 @@
+.wrapper {
+  position: absolute;
+  .innderText {
+    position: relative;
+    z-index: 99;
+    .grid {
+      border: 1.5px solid #8296e1;
+
+      padding: 5px;
+      position: relative;
+      .hide {
+        position: absolute;
+        opacity: 0;
+        z-index: -100;
+        white-space: pre;
+      }
+      input {
+        background: none;
+        // border: 1px solid #8296e1;
+        border: none;
+        // &::selection {
+        //   background-color: yellow !important;
+        // }
+        min-width: 20px;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

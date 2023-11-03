@@ -1,0 +1,93 @@
+﻿Product Changelogs
+1.0.16:
+* Bug Fixing
+* Update UI
+* Enhancement:
+   * View Build Versions
+   * Clear data in Key Index Import
+1.0.15:
+* Bug Fixing
+* Update UI
+* Enhance Performance
+1.0.14:
+* Bug Fixing
+* Admin Portal:
+   * Drawer Management: Element Bulk Import
+   * Update UI
+* Client Portal:
+   * Folder Management: Element Import Multiple Folder
+   * Update UI
+1.0.13:
+* Release 2
+* Bugs fixing
+* New Features:
+   * Key/Data Reference import
+   * Database Migration
+1.0.12:
+* Bugs fixing
+1.0.11:
+* Bugs fixing
+* Enhance Client Portal: Searching UI 
+1.0.10:
+* Release 1
+* Client Portal:
+   * Files viewer & Actions
+   * Scanner settings
+0.0.9:
+* Bugs fixing
+* Client Portal:
+   * File Management: Scanner integration
+* Enhance Settings: 
+   * Changing Organization Name & Color Theme
+0.0.8:
+* Bugs fixing
+* Client Portal:
+   * Folder Management: CRUD & Actions
+   * File Management: basic viewer
+   * Search: basic search
+0.0.7:
+* Admin Portal:
+   * Drawer Management - Bulk Import
+   * Bug fixings
+* Client Portal:
+   * Folder Management: CRUD & Actions
+   * File Management: Add file(s)
+   * Bug fixings
+0.0.6:
+* UI bug fixings
+* Refactor UI code
+* Enhance performance from Backend
+0.0.5:
+* Admin Portal:
+   * User Management: Edit permission
+   * Drawer Management: CRUD & Actions
+   * Settings: Account, Preferences (Audit trail)
+   * Bug fixings
+0.0.4:
+* Admin Portal:
+   * Complete logic:
+      * Dashboard
+      * User Management: CRUD
+      * Drawer Management: Listing
+      * Settings: Database
+   * Bug fixings
+0.0.3:
+* Admin Portal:
+   * Login/Logout
+   * Update New UI: 
+      * Dashboard
+      * Drawer Management
+      * User Management
+      * Settings
+* Client Portal:
+   * Login/Logout
+   * Update New UI: 
+      * Folder Management
+      * Searching
+      * Settings
+0.0.2
+* Admin Portal:
+   * Basic Login (no validation)
+   * Basic Dashboard
+0.0.1 
+* 1st deployment (testing scripts)

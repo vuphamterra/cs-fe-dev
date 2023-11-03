@@ -1,0 +1,30 @@
+.folder_table {
+  table {
+    thead {
+      th {
+        color: #384250;
+      }
+      th::before {
+        background: none !important;
+      }
+      td:last-of-type {
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  svg {
+    color: #000000;
+    vertical-align: unset;
+  }
+
+  .actions_container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    > span:not(:last-child) {
+      cursor: pointer;
+    }
+  }
+}

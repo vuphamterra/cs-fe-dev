@@ -1,0 +1,287 @@
+*p {
+  margin: 0;
+}
+
+.main_panel {
+  margin: 20px;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+
+  p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #384250;
+  }
+
+  .common_header {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+    p {
+      margin: 0;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: #384250;
+    }
+  }
+
+  // Audit Trail
+  .audit_collapse {
+    background-color: var(--cs-fill-color);
+    margin-bottom: 24px;
+
+    .select {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #9da4ae;
+    }
+
+    .title {
+      padding-bottom: 4px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: #384250;
+    }
+
+    .audit_buttons_container {
+      height: 40px;
+      display: flex;
+      justify-content: flex-end;
+      margin: 24px 0px;
+
+      .setting_btn {
+        width: 140px;
+        height: 40px;
+        color: var(--cs-primary-color);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      button[disabled] {
+        background-color: #d9d9d9;
+      }
+
+      .report_btn {
+        margin-left: 20px;
+        width: 140px;
+        height: 40px;
+        color: #f7f8fa;
+        background-color: var(--cs-primary-color);
+        border-radius: 38px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  // Secure Paths
+  .secure_collapse {
+    background-color: var(--cs-fill-color);
+    margin-bottom: 24px;
+
+    .header {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 12px;
+        height: 16px;
+        margin-right: 8px;
+      }
+      p {
+        margin: 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: #384250;
+      }
+    }
+
+    .secure_body {
+      margin: 12px, 26px;
+      border: 1px solid #b9b9b9;
+      border-radius: 8px;
+
+      .secure_title {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 44px;
+        background-color: var(--cs-fill-color);
+        padding-left: 8px;
+
+        p {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: #384250;
+        }
+      }
+
+      .secure_path_img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 184px;
+          height: 157px;
+          margin: 16px 0px;
+        }
+      }
+    }
+
+    .secure_buttons_container {
+      height: 40px;
+      display: flex;
+      justify-content: flex-end;
+      margin: 24px 0px;
+
+      .remove_btn {
+        width: 140px;
+        height: 40px;
+        color: var(--cs-primary-color);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      .add_btn {
+        margin-left: 20px;
+        width: 140px;
+        height: 40px;
+        color: #f7f8fa;
+        background-color: var(--cs-primary-color);
+        border-radius: 38px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  // Cloud Hosting
+  .cloud_collapse {
+    background-color: var(--cs-fill-color);
+    margin-bottom: 24px;
+
+    .title {
+      padding-bottom: 4px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: #384250;
+    }
+
+    .cloud_buttons_container {
+      height: 40px;
+      display: flex;
+      justify-content: flex-end;
+      margin: 24px 0px;
+
+      .cancel_btn {
+        width: 140px;
+        height: 40px;
+        color: var(--cs-primary-color);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      .verify_btn {
+        margin-left: 20px;
+        width: 140px;
+        height: 40px;
+        color: var(--cs-primary-color);
+        background-color: #ffffff;
+        border-radius: 38px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        font-size: 16px;
+        border: 1px solid var(--cs-primary-color);
+      }
+
+      .save_btn {
+        margin-left: 20px;
+        width: 140px;
+        height: 40px;
+        color: #f7f8fa;
+        background-color: var(--cs-primary-color);
+        border-radius: 38px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        font-size: 16px;
+      }
+    }
+
+    .cloud_img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        cursor: pointer;
+        width: 16px;
+        height: 20px;
+      }
+    }
+  }
+
+  .color_palette_icon {
+    margin-right: 8px;
+    svg {
+      fill: #384250;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .color_theme_panel {
+    div[class='ant-collapse-content-box'] {
+      position: relative;
+    }
+    .loading_block {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba($color: #ffffff, $alpha: 0.5);
+      z-index: 9999;
+    }
+  }
+}

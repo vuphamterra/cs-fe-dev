@@ -1,0 +1,67 @@
+.ModalRemoveFiles {
+  .titleModal {
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0px;
+    }
+    .title {
+      color: #384250;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    svg {
+      background-color: var(--cs-primary-bg-color);
+      color: var(--cs-primary-color);
+      margin-right: 8px;
+      border-radius: 50%;
+    }
+  }
+  .footer {
+    display: flex;
+    row-gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    button {
+      min-width: 120px;
+      height: 40px;
+      border-radius: 38px;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .delete_button {
+      background-color: var(--cs-primary-color);
+      &:hover {
+        background-color: var(--cs-primary-color);
+        color: #ffffff;
+      }
+    }
+    .cancel_button {
+      border: unset;
+      font-weight: 600;
+      font-size: 16px;
+      color: #000000;
+      &:hover {
+        background-color: unset;
+        color: #000000;
+      }
+    }
+  }
+  .subTitle {
+    color: #6c737f;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .ant-radio-wrapper {
+    .ant-radio-checked {
+      .ant-radio-inner {
+        color: var(--cs-primary-color);
+        background-color: #fff;
+        &::after {
+          background: var(--cs-primary-color);
+        }
+      }
+    }
+  }
+}

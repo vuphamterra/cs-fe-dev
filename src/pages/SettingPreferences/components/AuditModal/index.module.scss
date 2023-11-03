@@ -1,0 +1,57 @@
+.audit_modal {
+  .modal_title {
+    display: flex;
+    align-items: center;
+    img {
+      width: 48px;
+      height: 48px;
+    }
+    p {
+      margin: 0;
+      margin-left: 12px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: #384250;
+    }
+  }
+
+  .modal_body {
+    margin-top: 26px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+  }
+}
+
+.buttons_container {
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 24px 0px;
+
+  .cancel_btn {
+    width: 140px;
+    height: 40px;
+    color: var(--cs-primary-color);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+  }
+
+  .apply_btn {
+    margin-left: 20px;
+    width: 140px;
+    height: 40px;
+    color: #f7f8fa;
+    background-color: var(--cs-primary-color);
+    border-radius: 38px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+  }
+}

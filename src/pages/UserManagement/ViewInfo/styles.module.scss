@@ -1,0 +1,113 @@
+.user_info_comp {
+  overflow: hidden;
+  .loading_content {
+    width: 100%;
+    min-height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn_group {
+      button {
+        height: 40px;
+        border: 1px solid var(--cs-primary-color);
+        color: var(--cs-primary-color);
+        border-radius: 38px;
+        font-weight: 600;
+        font-size: 16px;
+        svg {
+          vertical-align: unset;
+        }
+      }
+      .btn_delete {
+        height: 40px;
+        width: 40px !important;
+        margin-left: 8px;
+        :disabled {
+          width: 40px;
+        }
+      }
+    }
+  }
+  .user_details {
+    margin-top: 4px;
+    p {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: #384250;
+      margin-block: 10px;
+    }
+
+    .user_administrator {
+      margin-block: 10px;
+      display: flex;
+      align-items: center;
+      .switch_buton {
+        background-color: var(--cs-primary-color) !important;
+      }
+      .switch_buton.switch_off {
+        background-color: rgba($color: #000000, $alpha: 0.25) !important;
+      }
+      .switch_text {
+        font-weight: 500;
+        font-size: 16px;
+        color: #384250;
+        margin-left: 8px;
+        vertical-align: bottom;
+      }
+    }
+
+    img {
+      width: 14px;
+      height: 14px;
+      vertical-align: unset;
+      cursor: pointer;
+    }
+    .user_description {
+      display: flex;
+      align-items: baseline;
+      p {
+        word-break: break-all;
+      }
+    }
+    .edit_description {
+      display: flex;
+      height: 100px;
+      button {
+        margin-left: 4px;
+        border: none;
+        svg {
+          vertical-align: unset;
+        }
+      }
+      .ibtn_confirm {
+        background-color: #e0ffe8;
+        color: #3ac569;
+      }
+      .ibtn_cancel {
+        background-color: #fee2e0;
+        color: #ff3b30;
+      }
+    }
+
+    .nodata_user {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: unset;
+        height: unset;
+      }
+    }
+  }
+}

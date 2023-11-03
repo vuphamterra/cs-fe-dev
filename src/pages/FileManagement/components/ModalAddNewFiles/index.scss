@@ -1,0 +1,138 @@
+.ModalAddNewFiles {
+  overflow: hidden;
+
+  .titleModal {
+    display: flex;
+
+    p {
+      margin: 0px;
+    }
+
+    .title {
+      color: #384250;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .subTitle {
+      color: #6c737f;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    svg {
+      background-color: var(--cs-primary-bg-color);
+      color: var(--cs-primary-color);
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+  }
+
+  .upload_modal {
+    svg {
+      background-color: var(--cs-primary-bg-color);
+      color: var(--cs-primary-color);
+      border-radius: 50%;
+    }
+  }
+
+  .footer {
+    display: flex;
+    row-gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+
+    button {
+      height: 40px;
+      color: #ffffff;
+      border-radius: 38px;
+      min-width: 100px;
+      font-weight: 600;
+      font-size: 16px;
+
+      &:hover {
+        background-color: var(--cs-primary-bg-color);
+        color: #ffffff;
+      }
+    }
+  }
+
+  .ant-radio-wrapper {
+    .ant-radio-checked {
+      .ant-radio-inner {
+        color: var(--cs-primary-color);
+        background-color: #fff;
+
+        &::after {
+          background: var(--cs-primary-color);
+        }
+      }
+    }
+  }
+
+  .upload_error {
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: red;
+    }
+  }
+
+  div[class='ant-upload-list ant-upload-list-picture'] {
+    max-height: 300px;
+    padding: 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 8px;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: #c9c9c9;
+    }
+
+    svg {
+      background-color: unset;
+      border-radius: unset;
+    }
+  }
+
+  .footer {
+    display: flex;
+    row-gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+
+    button {
+      height: 40px;
+      color: #ffffff;
+      border-radius: 38px;
+      min-width: 100px;
+      font-weight: 600;
+      font-size: 16px;
+
+      &:hover {
+        color: #ffffff !important;
+      }
+    }
+  }
+
+  .insert-pos-option {
+    width: 100%;
+
+    label {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+}

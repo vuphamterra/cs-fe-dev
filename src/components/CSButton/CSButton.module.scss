@@ -1,0 +1,20 @@
+.cs_btn {
+  background: var(--cs-primary-color);
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 24px;
+  text-align: center;
+  border-radius: 38px;
+  color: #ffffff;
+  height: 40px;
+
+  > span:first-of-type {
+    vertical-align: 0px;
+
+    > svg {
+      width: 14px;
+    }
+  }
+}

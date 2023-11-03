@@ -1,0 +1,144 @@
+.view_detail {
+  width: 25%;
+  height: 100%;
+  margin-left: 8px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .close_btn_layout {
+    display: flex;
+    justify-content: end;
+
+    .close_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 4px;
+      border: none;
+      background-color: transparent;
+      svg {
+        vertical-align: unset;
+        margin: 4px;
+      }
+    }
+  }
+
+  .content_detail {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-inline: 16px;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: #c9c9c9;
+    }
+
+    .index_field {
+      border: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .card_head {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        p {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          color: #384250;
+          margin: 0;
+        }
+      }
+
+      .body_info {
+        width: 100%;
+        margin-top: 16px;
+        padding: 4px;
+        .title {
+          font-weight: 600;
+          font-size: 14px;
+          color: #384250;
+          margin: 0;
+        }
+        .infomation {
+          font-weight: 400;
+          font-size: 14px;
+          color: #6c737f;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    hr {
+      margin: 4px !important;
+    }
+
+    .folder_info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      border: none;
+
+      .info {
+        display: flex;
+        align-items: center;
+        p {
+          font-weight: 600;
+          font-size: 14px;
+          color: #384250;
+          margin: 0;
+        }
+      }
+      .body_info {
+        margin-top: 16px;
+        padding: 4px;
+        .title {
+          font-weight: 600;
+          font-size: 14px;
+          color: #384250;
+          margin: 0;
+        }
+        .infomation {
+          font-weight: 400;
+          font-size: 14px;
+          color: #6c737f;
+          margin-bottom: 2rem;
+        }
+        span {
+          width: 14px;
+          height: 14px;
+        }
+        img {
+          width: 14px;
+          height: 14px;
+          vertical-align: unset;
+          margin-left: 8px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .folder_info_icon {
+    color: var(--cs-primary-color);
+    padding: 8px;
+    background: var(--cs-primary-bg-color);
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,120 @@
+.export_modal {
+  .modal_header {
+    font-family: 'Inter';
+    font-style: normal;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 48px;
+      height: 48px;
+      margin-right: 12px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 20px;
+      color: #384250;
+    }
+
+    .sub_title {
+      font-weight: 400;
+      font-size: 14px;
+      color: #6c737f;
+    }
+  }
+
+  .modal_body {
+    margin-top: 16px;
+    padding: 8px;
+
+    p {
+      margin: 0;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .group_radio {
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    .export_option {
+      margin-bottom: 8px;
+    }
+
+    .export_type {
+      margin-bottom: 8px;
+    }
+
+    .option_choices {
+      margin-bottom: 8px;
+
+      .checkbox_group {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          margin: 8px 0px;
+          font-weight: 500;
+          font-size: 14px;
+          color: #384250;
+        }
+      }
+    }
+
+    .export_derectory {
+      margin-bottom: 24px;
+
+      .browse {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+          height: 40px;
+        }
+
+        button {
+          margin-left: 12px;
+          width: 120px;
+          height: 40px;
+          border-radius: 38px;
+          border: 1px solid var(--cs-primary-color);
+          color: var(--cs-primary-color);
+        }
+      }
+    }
+  }
+
+  .modal_actions {
+    button {
+      width: 120px;
+      height: 40px;
+      border-radius: 38px;
+      font-weight: 600;
+      font-size: 16px;
+      border: none;
+    }
+
+    .cancel_btn {
+      color: var(--cs-primary-color);
+    }
+
+    .export_btn {
+      background-color: var(--cs-primary-color);
+      color: #ffffff;
+
+      &:hover {
+        color: #ffffff !important;
+      }
+    }
+  }
+
+
+}

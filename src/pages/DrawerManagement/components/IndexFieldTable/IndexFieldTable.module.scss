@@ -1,0 +1,64 @@
+.container {
+  div[class='ant-table-container'] {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-inline-end: 1px solid #f0f0f0;
+  }
+  table {
+    colgroup {
+      display: none;
+    }
+    th, td {
+      border-inline-end: none !important;
+    }
+    thead {
+      th:nth-child(2), td:nth-child(2) {
+        border-top-left-radius: 8px;
+      }
+      th, td {
+        background: var(--cs-fill-color) !important;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #384250 !important;
+      }
+    }
+    tbody {
+      tr {
+        &:last-of-type {
+          td {
+            &:first-of-type, &:nth-child(2) {
+              border-bottom-left-radius: 8px;
+            }
+            &:last-of-type {
+              border-bottom-right-radius: 8px;
+            }
+          }
+        }
+        td {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #384250;
+        }
+      }
+    }
+
+    .edit_btn {
+      color: #9da4ae;
+      margin-right: 10px;
+    }
+
+    .delete_btn {
+      color: #9da4ae;
+    }
+
+    .edit_btn,
+    .delete_btn {
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.container {
+  > h2 {
+    color: #384250;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    margin-bottom: 40px;
+  }
+
+  form {
+    label {
+      color: #384250;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 500;
+    }
+
+    input {
+      height: 40px;
+    }
+
+    input[type="password"] {
+      height: 30px;
+    }
+
+    .spinRow {
+      justify-content: center;
+    }
+
+    .btnRow {
+      justify-content: right;
+
+      button {
+        height: 40px;
+        padding: 8px 24px !important;
+        margin-top: 24px;
+      }
+    }
+  }
+
+  .success_info {
+    .success_title {
+      margin-top: 13px;
+      margin-bottom: 8px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #384250;
+    }
+    
+    .success_desc {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #6C737F;
+  
+      span {
+        font-weight: 600;
+      }
+    }
+
+    button {
+      margin-top: 56px;
+      width: 168px !important;
+      height: 40px;
+    }
+  }
+
+}
